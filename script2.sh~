@@ -1,0 +1,11 @@
+read -p "Introduce un valor mayor que 0: " x
+
+cont=0
+const=5;
+if [ $x -lt 0 ];then
+echo El valor es menor que 0
+else while [$cont -gt $x ];do
+echo "$cont"
+cont=$(($cont + $const))
+done
+fi
